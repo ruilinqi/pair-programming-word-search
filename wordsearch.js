@@ -4,14 +4,14 @@ const transpose = function (matrix) {
     for (let row in matrix[0]) {
       let newArray = [];
       for (let col in matrix) {
-        newArray.push(matrix[col][row]);
-        //console.log("rowArray:", rowArray);
-      }
+          newArray.push(matrix[col][row]);
+          //console.log("rowArray:", rowArray);
+    }
       newMatrix.push(newArray);
     //   console.log("newMatrix:", newMatrix)
     }
-   return newMatrix;
-  };
+    return newMatrix;
+};
 
   const wordSearch = (letters, word) => { 
     const horizontalJoin = letters.map(ls => ls.join(''));
